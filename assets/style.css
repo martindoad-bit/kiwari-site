@@ -59,3 +59,65 @@ footer.site a{color:var(--sub)}
 .doc h2{font-size:19px;margin:32px 0 8px}
 .doc p,.doc li{font-size:15px}
 @media(max-width:640px){nav.main{width:100%;margin-left:0}section{padding:48px 0}.hero{padding:44px 0}}
+
+/* ---- v2: illustrations, feature grid, tags ---- */
+:root{--accent:#F2A65A;--sky:#DCE9F7}
+.il{mix-blend-mode:multiply;margin:0 auto}
+.hero2{background:var(--bg);border-bottom:1px solid var(--line);padding:56px 0 48px}
+.hero2 .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:32px;align-items:center}
+.hero2 h1{font-size:clamp(28px,4.2vw,42px);line-height:1.4;margin:0 0 16px;letter-spacing:.01em}
+.hero2 p.lead{font-size:17px;color:var(--sub);margin:0 0 20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+.chips li{font-size:14px;font-weight:500;background:#fff;border:1px solid #C9D2DC;border-radius:999px;padding:4px 14px;color:var(--navy)}
+.hero2 .cta{display:flex;gap:12px;flex-wrap:wrap}
+.center{text-align:center}
+.center p.sec-lead{margin-left:auto;margin-right:auto}
+.pic{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 18px 20px;text-align:center}
+.pic img{width:100%;max-width:240px}
+.pic h3{margin:10px 0 4px;font-size:18px}
+.pic p{margin:0;color:var(--sub);font-size:14px;line-height:1.7}
+.g5{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.step{position:relative}
+.step .num{position:absolute;top:12px;left:12px;margin:0}
+.rail{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:6px;text-align:center}
+.rail div{font-size:15px;font-weight:700;line-height:1.5}
+.rail .tag{margin:4px 0 0;display:inline-block}
+.railwrap{overflow-x:auto}
+.railin{min-width:680px}
+.tag.std{border:1px solid #B8CCE2;background:var(--tint);color:var(--navy)}
+.tag.cus{border:1px solid #E7B77F;background:#FFF4E6;color:#8A4B08}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--sub);margin:0 0 20px;padding:0;list-style:none}
+.legend .tag{margin:0 6px 0 0}
+.fgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 16px 14px}
+.fcard .hd{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.fcard svg{width:34px;height:34px;flex:none;color:var(--navy);background:var(--tint);border-radius:8px;padding:6px}
+.fcard h3{font-size:16px;margin:0;line-height:1.4}
+.fcard .tag{margin:2px 0 0;display:inline-block}
+.fcard ul{margin:0;padding:0;list-style:none;font-size:14px;color:#3A4350;line-height:1.6}
+.fcard li{padding:4px 0;border-top:1px solid #EEF1F4}
+.shots{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.shots figure{margin:0}
+.shots figcaption{font-size:15px;font-weight:700;margin-top:10px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:28px;align-items:center}
+.split img{width:100%;max-width:360px}
+.mini{display:grid;gap:12px}
+.mini div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.mini h3{font-size:16px;margin:0 0 2px}
+.mini p{margin:0;font-size:14px;color:var(--sub);line-height:1.7}
+.plan.cus{background:#FFFBF5;border:1px solid #E7B77F}
+.price.ask{font-size:24px}
+.band{background:var(--tint);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 0}
+.band .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:28px;align-items:center}
+.band img{width:100%;max-width:380px}
+.band h2{margin:0 0 8px}
+.band p{margin:0;color:#3A4350}
+@media(max-width:760px){.hero2 .wrap,.split,.band .wrap{grid-template-columns:1fr}.hero2{padding:36px 0}.hero2 .art{order:-1}.hero2 .art img{max-width:340px}}
+.hero2 h1 span{display:inline-block}
+.shots{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fcard.wide{grid-column:1/-1}
+.fcard.wide ul{display:flex;flex-wrap:wrap;gap:6px 10px}
+.fcard.wide li{border:1px solid #E2E6EB;border-radius:999px;padding:3px 12px}
+@media(max-width:640px){.shots{grid-template-columns:1fr}}
+h2,h3{text-wrap:balance}
