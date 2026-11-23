@@ -61,7 +61,7 @@ footer.site a{color:var(--sub)}
 @media(max-width:640px){nav.main{width:100%;margin-left:0}section{padding:48px 0}.hero{padding:44px 0}}
 
 /* ---- v2: illustrations, feature grid, tags ---- */
-:root{--accent:#F2A65A;--sky:#DCE9F7}
+:root{--accent:#C8955A;--sky:#DCE9F7}
 .il{mix-blend-mode:multiply;margin:0 auto}
 .hero2{background:var(--bg);border-bottom:1px solid var(--line);padding:56px 0 48px}
 .hero2 .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:32px;align-items:center}
@@ -86,7 +86,7 @@ footer.site a{color:var(--sub)}
 .railwrap{overflow-x:auto}
 .railin{min-width:680px}
 .tag.std{border:1px solid #B8CCE2;background:var(--tint);color:var(--navy)}
-.tag.cus{border:1px solid #E7B77F;background:#FFF4E6;color:#8A4B08}
+.tag.cus{border:1px solid #D9B48A;background:#F8EFE3;color:#6B4A1F}
 .legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--sub);margin:0 0 20px;padding:0;list-style:none}
 .legend .tag{margin:0 6px 0 0}
 .fgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
@@ -106,7 +106,7 @@ footer.site a{color:var(--sub)}
 .mini div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
 .mini h3{font-size:16px;margin:0 0 2px}
 .mini p{margin:0;font-size:14px;color:var(--sub);line-height:1.7}
-.plan.cus{background:#FFFBF5;border:1px solid #E7B77F}
+.plan.cus{background:#FBF6EE;border:1px solid #D9B48A}
 .price.ask{font-size:24px}
 .band{background:var(--tint);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 0}
 .band .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:28px;align-items:center}
@@ -121,3 +121,6 @@ footer.site a{color:var(--sub)}
 .fcard.wide li{border:1px solid #E2E6EB;border-radius:999px;padding:3px 12px}
 @media(max-width:640px){.shots{grid-template-columns:1fr}}
 h2,h3{text-wrap:balance}
+.brand img{height:34px;width:auto;display:block}
+.bar321{display:grid;grid-template-columns:3fr 2fr 1fr;width:132px;height:8px;margin:0 0 18px}
+.bar321 i:nth-child(1){background:#1F4E79}.bar321 i:nth-child(2){background:#C8955A}.bar321 i:nth-child(3){background:#F1E6D6}
